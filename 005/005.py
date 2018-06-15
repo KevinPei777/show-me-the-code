@@ -10,8 +10,10 @@ all_files = os.listdir(root_dir)
 index = all_files.index('images')
 image_dir = root_dir + '/' + all_files[index]
 print(image_dir)
+
 all_images = os.listdir(image_dir)
 print(all_images)
+
 for file in all_images:
     image = Image.open(image_dir + '/' + file)
     size = image.size
