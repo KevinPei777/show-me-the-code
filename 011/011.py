@@ -4,11 +4,10 @@ def get_input(input_string):
 
         for word in sensitive_words:
             word = word.replace('\n', '')
-            # test.append(word)
+
             if word in input_string:
                 return print('Freedom!')
-            else:
-                return print('Human Rights')
+        return print('Human Rights')
 
 
 string = input('Please input your idea!\n')
